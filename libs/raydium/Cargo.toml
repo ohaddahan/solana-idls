@@ -1,13 +1,13 @@
 [package]
 name = "raydium"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["ohaddahan@gmail.com"]
 license = "MIT"
 description = "raydium client"
 keywords = ["raydium", "solana"]
 categories = ["cryptography"]
-repository = "https://github.com/solana-pools/raydium.git"
+repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/raydium"
 
 [dependencies]
 borsh = { workspace = true }

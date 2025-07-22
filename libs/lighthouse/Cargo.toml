@@ -1,13 +1,13 @@
 [package]
 name = "lighthouse-sol"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["ohaddahan@gmail.com"]
 license = "MIT"
 description = "lighthouse client"
 keywords = ["lighthouse", "solana"]
 categories = ["cryptography"]
-repository = "https://github.com/solana-pools/lighthouse.git"
+repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/lighthouse"
 
 [dependencies]
 borsh = { workspace = true }

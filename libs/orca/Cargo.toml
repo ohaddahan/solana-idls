@@ -1,13 +1,13 @@
 [package]
 name = "orca-sol"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["ohaddahan@gmail.com"]
 license = "MIT"
 description = "orca client"
 keywords = ["orca", "solana"]
 categories = ["cryptography"]
-repository = "https://github.com/solana-pools/orca.git"
+repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/orca"
 
 [dependencies]
 borsh = { workspace = true }
