@@ -1,0 +1,2 @@
+[build]
+rustflags = ["--allow", "unused_imports", "--allow", "deprecated"]

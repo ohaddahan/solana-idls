@@ -1,0 +1,30 @@
+[package]
+name = "raydium"
+version = "0.1.0"
+edition = "2024"
+authors = ["ohaddahan@gmail.com"]
+license = "MIT"
+description = "raydium client"
+keywords = ["raydium", "solana"]
+categories = ["cryptography"]
+repository = "https://github.com/solana-pools/raydium.git"
+
+[dependencies]
+borsh = { workspace = true }
+solana-pubkey = { workspace = true, features = ["serde", "borsh"] }
+solana-account-info = { workspace = true }
+solana-program-error = { workspace = true, features = ["borsh", "serde"] }
+solana-program-entrypoint = { workspace = true }
+solana-cpi = { workspace = true }
+solana-instruction = { workspace = true, features = ["serde", "borsh"] }
+solana-decode-error = { workspace = true }
+solana-msg = { workspace = true }
+num-derive = { workspace = true }
+thiserror = { workspace = true }
+num-traits = { workspace = true }
+
+[features]
+fetch = []
+serde = []
+anchor-idl-build = []
+anchor = []

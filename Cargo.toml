@@ -1,0 +1,29 @@
+[workspace.package]
+authors = ["Ohad Dahan <ohaddahan@gmail.com>"]
+version = "0.0.1"
+edition = "2024"
+rust-version = "1.85.0"
+
+[workspace]
+members = ["libs/*"]
+
+[patch.crates-io]
+aes-gcm-siv = { git = 'https://github.com/block-mesh/AEADs', branch = 'rustls-dep-hell-1-18' }
+curve25519-dalek = { git = "https://github.com/block-mesh/curve25519-dalek", branch = "rustls-dep-hell-1-18" }
+
+[workspace.dependencies]
+borsh = { version = "1.5.7" }
+solana-pubkey = { version = "2.4.0", features = ["serde", "borsh"] }
+solana-account-info = "2.3.0"
+solana-program-error = { version = "2.2.2", features = ["borsh", "serde"] }
+solana-program-entrypoint = { version = "2.3.0" }
+solana-cpi = { version = "2.2.1" }
+solana-instruction = { version = "2.3.0", features = ["serde", "borsh"] }
+solana-decode-error = { version = "2.3.0" }
+solana-msg = { version = "2.2.1" }
+num-derive = { version = "0.4.2" }
+thiserror = { version = "2.0.12" }
+num-traits = { version = "0.2.19" }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_with = { version = "3.14.0" }
+leb128 = { version = "0.2.5" }
