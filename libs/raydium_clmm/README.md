@@ -1,4 +1,4 @@
-# Raydium
+# Raydium CLMM
 
 * [Source](https://github.com/raydium-io/raydium-clmm)
 * Generated via [codama](https://github.com/codama-idl/codama)

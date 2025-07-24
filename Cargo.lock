@@ -514,7 +514,7 @@ checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
 
 [[package]]
 name = "orca-sol"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "borsh 1.5.7",
  "num-derive",
@@ -596,8 +596,26 @@ dependencies = [
 ]
 
 [[package]]
-name = "raydium"
-version = "0.1.1"
+name = "raydium_amm"
+version = "0.1.2"
+dependencies = [
+ "borsh 1.5.7",
+ "num-derive",
+ "num-traits",
+ "solana-account-info",
+ "solana-cpi",
+ "solana-decode-error",
+ "solana-instruction",
+ "solana-msg",
+ "solana-program-entrypoint",
+ "solana-program-error",
+ "solana-pubkey",
+ "thiserror",
+]
+
+[[package]]
+name = "raydium_clmm"
+version = "0.1.2"
 dependencies = [
  "borsh 1.5.7",
  "num-derive",

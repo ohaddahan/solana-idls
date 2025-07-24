@@ -1,13 +1,13 @@
 [package]
-name = "orca-sol"
+name = "raydium_amm"
 version = "0.1.2"
 edition = "2024"
 authors = ["ohaddahan@gmail.com"]
 license = "MIT"
-description = "orca client"
-keywords = ["orca", "solana"]
+description = "raydium client"
+keywords = ["raydium", "solana", "clmm"]
 categories = ["cryptography"]
-repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/orca"
+repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/raydium_amm"
 
 [dependencies]
 borsh = { workspace = true }
