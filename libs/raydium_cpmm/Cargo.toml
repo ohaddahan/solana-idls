@@ -1,13 +1,13 @@
 [package]
-name = "raydium_amm"
+name = "raydium_cpmm"
 version = { workspace = true }
 edition = "2024"
 authors = ["ohaddahan@gmail.com"]
 license = "MIT"
 description = "raydium client"
-keywords = ["raydium", "solana", "amm"]
+keywords = ["raydium", "solana", "cpmm"]
 categories = ["cryptography"]
-repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/raydium_amm"
+repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/raydium_cpmm"
 
 [dependencies]
 borsh = { workspace = true }
