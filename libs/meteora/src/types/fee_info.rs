@@ -5,16 +5,14 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct FeeInfo {
-pub fee_x_per_token_complete: u128,
-pub fee_y_per_token_complete: u128,
-pub fee_x_pending: u64,
-pub fee_y_pending: u64,
+    pub fee_x_per_token_complete: u128,
+    pub fee_y_per_token_complete: u128,
+    pub fee_x_pending: u64,
+    pub fee_y_pending: u64,
 }
-
-

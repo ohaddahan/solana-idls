@@ -5,18 +5,27 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 use num_derive::FromPrimitive;
 
 /// Type of the Pair. 0 = Permissionless, 1 = Permission, 2 = CustomizablePermissionless. Putting 0 as permissionless for backward compatibility.
-#[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq, Copy, PartialOrd, Hash, FromPrimitive)]
+#[derive(
+    BorshSerialize,
+    BorshDeserialize,
+    Clone,
+    Debug,
+    Eq,
+    PartialEq,
+    Copy,
+    PartialOrd,
+    Hash,
+    FromPrimitive,
+)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum PairType {
-Permissionless,
-Permission,
-CustomizablePermissionless,
-PermissionlessV2,
+    Permissionless,
+    Permission,
+    CustomizablePermissionless,
+    PermissionlessV2,
 }
-
-

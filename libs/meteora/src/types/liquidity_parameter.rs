@@ -6,18 +6,16 @@
 //!
 
 use crate::types::BinLiquidityDistribution;
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct LiquidityParameter {
-/// Amount of X token to deposit
-pub amount_x: u64,
-/// Amount of Y token to deposit
-pub amount_y: u64,
-/// Liquidity distribution to each bins
-pub bin_liquidity_dist: Vec<BinLiquidityDistribution>,
+    /// Amount of X token to deposit
+    pub amount_x: u64,
+    /// Amount of Y token to deposit
+    pub amount_y: u64,
+    /// Liquidity distribution to each bins
+    pub bin_liquidity_dist: Vec<BinLiquidityDistribution>,
 }
-
-

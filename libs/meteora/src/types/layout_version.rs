@@ -5,16 +5,25 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 use num_derive::FromPrimitive;
 
 /// Layout version
-#[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq, Copy, PartialOrd, Hash, FromPrimitive)]
+#[derive(
+    BorshSerialize,
+    BorshDeserialize,
+    Clone,
+    Debug,
+    Eq,
+    PartialEq,
+    Copy,
+    PartialOrd,
+    Hash,
+    FromPrimitive,
+)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum LayoutVersion {
-V0,
-V1,
+    V0,
+    V1,
 }
-
-

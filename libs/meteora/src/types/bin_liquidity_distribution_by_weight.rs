@@ -5,16 +5,14 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct BinLiquidityDistributionByWeight {
-/// Define the bin ID wish to deposit to.
-pub bin_id: i32,
-/// weight of liquidity distributed for this bin id
-pub weight: u16,
+    /// Define the bin ID wish to deposit to.
+    pub bin_id: i32,
+    /// weight of liquidity distributed for this bin id
+    pub weight: u16,
 }
-
-

@@ -5,18 +5,16 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct Observation {
-/// Cumulative active bin ID
-pub cumulative_active_bin_id: i128,
-/// Observation sample created timestamp
-pub created_at: i64,
-/// Observation sample last updated timestamp
-pub last_updated_at: i64,
+    /// Cumulative active bin ID
+    pub cumulative_active_bin_id: i128,
+    /// Observation sample created timestamp
+    pub created_at: i64,
+    /// Observation sample last updated timestamp
+    pub last_updated_at: i64,
 }
-
-

@@ -6,13 +6,11 @@
 //!
 
 use crate::types::RemainingAccountsSlice;
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct RemainingAccountsInfo {
-pub slices: Vec<RemainingAccountsSlice>,
+    pub slices: Vec<RemainingAccountsSlice>,
 }
-
-

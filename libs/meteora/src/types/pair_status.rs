@@ -5,16 +5,25 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 use num_derive::FromPrimitive;
 
 /// Pair status. 0 = Enabled, 1 = Disabled. Putting 0 as enabled for backward compatibility.
-#[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq, Copy, PartialOrd, Hash, FromPrimitive)]
+#[derive(
+    BorshSerialize,
+    BorshDeserialize,
+    Clone,
+    Debug,
+    Eq,
+    PartialEq,
+    Copy,
+    PartialOrd,
+    Hash,
+    FromPrimitive,
+)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum PairStatus {
-Enabled,
-Disabled,
+    Enabled,
+    Disabled,
 }
-
-
