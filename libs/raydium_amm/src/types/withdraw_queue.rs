@@ -6,17 +6,15 @@
 //!
 
 use crate::types::WithdrawDestToken;
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct WithdrawQueue {
-pub owner: [u64; 4],
-pub head: u64,
-pub count: u64,
-#[cfg_attr(feature = "serde", serde(with = "serde_big_array::BigArray"))]
-pub buf: [WithdrawDestToken; 64],
+    pub owner: [u64; 4],
+    pub head: u64,
+    pub count: u64,
+    #[cfg_attr(feature = "serde", serde(with = "serde_big_array::BigArray"))]
+    pub buf: [WithdrawDestToken; 64],
 }
-
-
