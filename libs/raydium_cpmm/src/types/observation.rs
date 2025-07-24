@@ -5,19 +5,17 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
 
 /// The element of observations in ObservationState
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct Observation {
-/// The block timestamp of the observation
-pub block_timestamp: u64,
-/// the cumulative of token0 price during the duration time, Q32.32, the remaining 64 bit for overflow
-pub cumulative_token0_price_x32: u128,
-/// the cumulative of token1 price during the duration time, Q32.32, the remaining 64 bit for overflow
-pub cumulative_token1_price_x32: u128,
+    /// The block timestamp of the observation
+    pub block_timestamp: u64,
+    /// the cumulative of token0 price during the duration time, Q32.32, the remaining 64 bit for overflow
+    pub cumulative_token0_price_x32: u128,
+    /// the cumulative of token1 price during the duration time, Q32.32, the remaining 64 bit for overflow
+    pub cumulative_token1_price_x32: u128,
 }
-
-

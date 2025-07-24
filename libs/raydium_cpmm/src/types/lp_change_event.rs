@@ -5,28 +5,29 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use solana_pubkey::Pubkey;
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
+use solana_pubkey::Pubkey;
 
 /// Emitted when deposit and withdraw
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct LpChangeEvent {
-#[cfg_attr(feature = "serde", serde(with = "serde_with::As::<serde_with::DisplayFromStr>"))]
-pub pool_id: Pubkey,
-pub lp_amount_before: u64,
-/// pool vault sub trade fees
-pub token0_vault_before: u64,
-/// pool vault sub trade fees
-pub token1_vault_before: u64,
-/// calculate result without transfer fee
-pub token0_amount: u64,
-/// calculate result without transfer fee
-pub token1_amount: u64,
-pub token0_transfer_fee: u64,
-pub token1_transfer_fee: u64,
-pub change_type: u8,
+    #[cfg_attr(
+        feature = "serde",
+        serde(with = "serde_with::As::<serde_with::DisplayFromStr>")
+    )]
+    pub pool_id: Pubkey,
+    pub lp_amount_before: u64,
+    /// pool vault sub trade fees
+    pub token0_vault_before: u64,
+    /// pool vault sub trade fees
+    pub token1_vault_before: u64,
+    /// calculate result without transfer fee
+    pub token0_amount: u64,
+    /// calculate result without transfer fee
+    pub token1_amount: u64,
+    pub token0_transfer_fee: u64,
+    pub token1_transfer_fee: u64,
+    pub change_type: u8,
 }
-
-

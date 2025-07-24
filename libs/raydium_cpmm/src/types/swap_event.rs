@@ -5,27 +5,28 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use solana_pubkey::Pubkey;
-use borsh::BorshSerialize;
 use borsh::BorshDeserialize;
+use borsh::BorshSerialize;
+use solana_pubkey::Pubkey;
 
 /// Emitted when swap
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct SwapEvent {
-#[cfg_attr(feature = "serde", serde(with = "serde_with::As::<serde_with::DisplayFromStr>"))]
-pub pool_id: Pubkey,
-/// pool vault sub trade fees
-pub input_vault_before: u64,
-/// pool vault sub trade fees
-pub output_vault_before: u64,
-/// calculate result without transfer fee
-pub input_amount: u64,
-/// calculate result without transfer fee
-pub output_amount: u64,
-pub input_transfer_fee: u64,
-pub output_transfer_fee: u64,
-pub base_input: bool,
+    #[cfg_attr(
+        feature = "serde",
+        serde(with = "serde_with::As::<serde_with::DisplayFromStr>")
+    )]
+    pub pool_id: Pubkey,
+    /// pool vault sub trade fees
+    pub input_vault_before: u64,
+    /// pool vault sub trade fees
+    pub output_vault_before: u64,
+    /// calculate result without transfer fee
+    pub input_amount: u64,
+    /// calculate result without transfer fee
+    pub output_amount: u64,
+    pub input_transfer_fee: u64,
+    pub output_transfer_fee: u64,
+    pub base_input: bool,
 }
-
-

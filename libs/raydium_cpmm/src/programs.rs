@@ -5,9 +5,7 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-use solana_pubkey::{pubkey, Pubkey};
+use solana_pubkey::{Pubkey, pubkey};
 
-
-  /// `raydium_cp_swap` program ID.
-  pub const RAYDIUM_CP_SWAP_ID: Pubkey = pubkey!("CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C");
-
+/// `raydium_cp_swap` program ID.
+pub const RAYDIUM_CP_SWAP_ID: Pubkey = pubkey!("CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C");
