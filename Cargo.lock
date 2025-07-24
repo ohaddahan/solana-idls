@@ -418,7 +418,7 @@ checksum = "1171693293099992e19cddea4e8b849964e9846f4acee11b3948bcc337be8776"
 
 [[package]]
 name = "lighthouse-sol"
-version = "0.1.1"
+version = "0.1.5"
 dependencies = [
  "borsh 1.5.7",
  "leb128",
@@ -461,7 +461,7 @@ checksum = "32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0"
 
 [[package]]
 name = "meteora-sol"
-version = "0.1.1"
+version = "0.1.5"
 dependencies = [
  "borsh 1.5.7",
  "leb128",
@@ -514,7 +514,7 @@ checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
 
 [[package]]
 name = "orca-sol"
-version = "0.1.2"
+version = "0.1.5"
 dependencies = [
  "borsh 1.5.7",
  "num-derive",
@@ -597,7 +597,7 @@ dependencies = [
 
 [[package]]
 name = "raydium_amm"
-version = "0.1.2"
+version = "0.1.5"
 dependencies = [
  "borsh 1.5.7",
  "num-derive",
@@ -615,7 +615,7 @@ dependencies = [
 
 [[package]]
 name = "raydium_clmm"
-version = "0.1.2"
+version = "0.1.5"
 dependencies = [
  "borsh 1.5.7",
  "num-derive",
