@@ -531,9 +531,12 @@ checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
 name = "orca-sol"
 version = "0.1.7"
 dependencies = [
+ "base64 0.13.1",
+ "bincode",
  "borsh 1.5.7",
  "num-derive",
  "num-traits",
+ "serde",
  "solana-account-info",
  "solana-cpi",
  "solana-decode-error",

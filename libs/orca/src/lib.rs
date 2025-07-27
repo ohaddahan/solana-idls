@@ -11,6 +11,7 @@
 pub mod accounts;
 pub mod errors;
 pub mod instructions;
+pub mod log;
 pub mod programs;
 pub mod shared;
 pub mod types;
