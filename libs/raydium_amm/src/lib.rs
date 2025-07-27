@@ -12,4 +12,6 @@ pub mod programs;
 pub mod shared;
 pub mod types;
 
+pub mod log;
+
 pub use programs::*;

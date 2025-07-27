@@ -10,6 +10,9 @@ categories = ["cryptography"]
 repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/raydium_amm"
 
 [dependencies]
+bincode = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+base64 = { workspace = true }
 borsh = { workspace = true }
 solana-pubkey = { workspace = true, features = ["serde", "borsh"] }
 solana-account-info = { workspace = true }
