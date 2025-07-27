@@ -5,6 +5,7 @@ edition = "2024"
 rust-version = "1.85.0"
 
 [workspace]
+resolver = "3"
 members = ["libs/*"]
 
 [patch.crates-io]
