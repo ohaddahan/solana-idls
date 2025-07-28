@@ -14,7 +14,7 @@ use solana_pubkey::Pubkey;
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct AmmInfo {
-    pub discriminator: [u8; 8],
+    // pub discriminator: [u8; 8],
     pub status: u64,
     pub nonce: u64,
     pub order_num: u64,

@@ -11,7 +11,6 @@ use borsh::BorshSerialize;
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct Fees {
-    pub discriminator: [u8; 8],
     pub min_separate_numerator: u64,
     pub min_separate_denominator: u64,
     pub trade_fee_numerator: u64,
