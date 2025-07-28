@@ -17,6 +17,6 @@ pub struct Traded {
 
 pub fn decode_trade_log(log: &str) {
     let bytes = base64::decode_config(log, base64::STANDARD).unwrap();
-    let log: Traded = bincode::deserialize(&bytes).unwrap();
+    let log: Traded = bincode::deserialize(&bytes[8..]).unwrap();
     println!("{:?}", log);
 }

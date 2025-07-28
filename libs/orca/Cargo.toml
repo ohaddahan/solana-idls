@@ -10,6 +10,7 @@ categories = ["cryptography"]
 repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/orca"
 
 [dependencies]
+orca_whirlpools_core = { workspace = true }
 bincode = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
 base64 = { workspace = true }
@@ -25,6 +26,12 @@ solana-msg = { workspace = true }
 num-derive = { workspace = true }
 thiserror = { workspace = true }
 num-traits = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["full"] }
+dotenv = { workspace = true }
+solana-client = { workspace = true }
+
 
 [features]
 fetch = []
