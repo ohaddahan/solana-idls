@@ -95,7 +95,7 @@ pub struct AmmInfo {
     pub amm_owner: Pubkey,
     pub lp_amount: u64,
     pub client_order_id: u64,
-    pub padding: [u64; 2],
+    // pub padding: [u64; 2],
 }
 
 impl AmmInfo {
