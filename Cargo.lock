@@ -1514,7 +1514,7 @@ checksum = "1171693293099992e19cddea4e8b849964e9846f4acee11b3948bcc337be8776"
 
 [[package]]
 name = "lighthouse-sol"
-version = "0.1.9"
+version = "0.1.10"
 dependencies = [
  "borsh 1.5.7",
  "leb128",
@@ -1578,7 +1578,7 @@ dependencies = [
 
 [[package]]
 name = "meteora-sol"
-version = "0.1.9"
+version = "0.1.10"
 dependencies = [
  "borsh 1.5.7",
  "leb128",
@@ -1815,7 +1815,7 @@ checksum = "d05e27ee213611ffe7d6348b942e8f942b37114c00cc03cec254295a4a17852e"
 
 [[package]]
 name = "orca-sol"
-version = "0.1.9"
+version = "0.1.10"
 dependencies = [
  "base64 0.13.1",
  "bincode",
@@ -2172,7 +2172,7 @@ dependencies = [
 
 [[package]]
 name = "raydium_amm"
-version = "0.1.9"
+version = "0.1.10"
 dependencies = [
  "base64 0.13.1",
  "bincode",
@@ -2193,7 +2193,7 @@ dependencies = [
 
 [[package]]
 name = "raydium_clmm"
-version = "0.1.9"
+version = "0.1.10"
 dependencies = [
  "borsh 1.5.7",
  "num-derive",
@@ -2211,7 +2211,7 @@ dependencies = [
 
 [[package]]
 name = "raydium_cpmm"
-version = "0.1.9"
+version = "0.1.10"
 dependencies = [
  "borsh 1.5.7",
  "num-derive",
@@ -4072,6 +4072,27 @@ name = "subtle"
 version = "2.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292"
+
+[[package]]
+name = "switchboard_on_demand_sol"
+version = "0.1.10"
+dependencies = [
+ "base64 0.13.1",
+ "bincode",
+ "borsh 1.5.7",
+ "num-derive",
+ "num-traits",
+ "serde",
+ "solana-account-info",
+ "solana-cpi",
+ "solana-decode-error",
+ "solana-instruction",
+ "solana-msg",
+ "solana-program-entrypoint",
+ "solana-program-error",
+ "solana-pubkey",
+ "thiserror 2.0.12",
+]
 
 [[package]]
 name = "syn"
