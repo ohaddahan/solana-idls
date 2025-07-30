@@ -9,7 +9,7 @@ resolver = "3"
 members = ["libs/*"]
 
 [patch.crates-io]
-aes-gcm-siv = { git = 'https://github.com/block-mesh/AEADs', branch = 'rustls-dep-hell-1-18' }
+#aes-gcm-siv = { git = 'https://github.com/block-mesh/AEADs', branch = 'rustls-dep-hell-1-18' }
 curve25519-dalek = { git = "https://github.com/block-mesh/curve25519-dalek", branch = "rustls-dep-hell-1-18" }
 
 [workspace.dependencies]
