@@ -1,6 +1,6 @@
 [workspace.package]
 authors = ["Ohad Dahan <ohaddahan@gmail.com>"]
-version = "0.1.10"
+version = "0.1.11"
 edition = "2024"
 rust-version = "1.85.0"
 
@@ -31,6 +31,7 @@ thiserror = { version = "2.0.12" }
 num-traits = { version = "0.2.19" }
 serde = { version = "1.0.219", features = ["derive"] }
 serde_with = { version = "3.14.0" }
+serde-big-array = { version = "0.5.1" }
 leb128 = { version = "0.2.5" }
 tokio = { version = "1.47.0", features = ["full"] }
 dotenv = { version = "0.15.0" }

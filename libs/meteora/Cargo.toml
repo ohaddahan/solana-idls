@@ -25,6 +25,7 @@ num-traits = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
 serde_with = { workspace = true }
 leb128 = { workspace = true }
+serde-big-array = { workspace = true }
 
 [features]
 fetch = []
