@@ -8,6 +8,7 @@ description = "raydium client"
 keywords = ["raydium", "solana", "clmm"]
 categories = ["cryptography"]
 repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/raydium_clmm"
+documentation = "https://docs.rs/raydium_clmm/latest/raydium_clmm"
 
 [dependencies]
 borsh = { workspace = true }

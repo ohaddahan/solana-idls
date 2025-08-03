@@ -8,6 +8,7 @@ description = "raydium client"
 keywords = ["raydium", "solana", "amm"]
 categories = ["cryptography"]
 repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/raydium_amm"
+documentation = "https://docs.rs/raydium_amm/latest/raydium_amm"
 
 [dependencies]
 bincode = { workspace = true }

@@ -8,6 +8,7 @@ description = "lighthouse client"
 keywords = ["lighthouse", "solana"]
 categories = ["cryptography"]
 repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/lighthouse"
+documentation = "https://docs.rs/lighthouse-sol/latest/lighthouse_sol"
 
 [dependencies]
 borsh = { workspace = true }

@@ -8,6 +8,7 @@ description = "orca client"
 keywords = ["orca", "solana"]
 categories = ["cryptography"]
 repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/orca"
+documentation = "https://docs.rs/orca-sol/latest/orca_sol"
 
 [dependencies]
 bincode = { workspace = true }

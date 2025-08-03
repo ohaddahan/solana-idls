@@ -8,6 +8,7 @@ description = "Meteora DLMM"
 keywords = ["meteora", "solana"]
 categories = ["cryptography"]
 repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/meteroa"
+documentation = "https://docs.rs/meteora-sol/latest/meteora_sol"
 
 [dependencies]
 borsh = { workspace = true }
