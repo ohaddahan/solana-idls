@@ -1,0 +1,36 @@
+[package]
+name = "open_book"
+version = { workspace = true }
+edition = "2024"
+authors = ["ohaddahan@gmail.com"]
+license = "MIT"
+description = "open book client"
+keywords = ["open-book", "solana", "dex"]
+categories = ["cryptography"]
+repository = "https://github.com/ohaddahan/solana-idls/tree/master/libs/open_book"
+documentation = "https://docs.rs/raydium_amm/latest/open_book"
+
+[dependencies]
+bincode = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+base64 = { workspace = true }
+borsh = { workspace = true }
+solana-pubkey = { workspace = true, features = ["serde", "borsh"] }
+solana-account-info = { workspace = true }
+solana-program-error = { workspace = true, features = ["borsh", "serde"] }
+solana-program-entrypoint = { workspace = true }
+solana-cpi = { workspace = true }
+solana-instruction = { workspace = true, features = ["serde", "borsh"] }
+serde_with = { workspace = true }
+solana-decode-error = { workspace = true }
+solana-msg = { workspace = true }
+num-derive = { workspace = true }
+thiserror = { workspace = true }
+num-traits = { workspace = true }
+serde-big-array = { workspace = true }
+
+[features]
+fetch = []
+serde = []
+anchor-idl-build = []
+anchor = []
